@@ -1,1 +1,1 @@
-curso-node
+curso de aprendizado de nodeJS

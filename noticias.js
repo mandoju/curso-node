@@ -1,0 +1,1 @@
+console.log('Criando o site de notícias com nodeJS');
