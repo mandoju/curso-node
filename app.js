@@ -1,16 +1,22 @@
-var express = require('express');
-var app = express();
+var app = require('./config/server');
 
 app.get('/',function(req, res){
 
-    res.send("<html><body>Portal de notícias express</body></html>")
+    res.render("home/index")
 });
 
-app.get('/tecnologia',function(req, res){
+app.get('/formulario_inclusao_noticia',function(req, res){
 
-    res.send("<html><body>Notícias de tecnologia express</body></html>")
+    res.render("admin/form_add_noticia")
 });
+
+app.get('/noticias',function(req, res){
+
+    res.render("noticias/noticias")
+});
+
 
 app.listen(3000, function(){
-    console.log("Servidor rodando com express");
+    console.log('Servidor ON');
 });
+
